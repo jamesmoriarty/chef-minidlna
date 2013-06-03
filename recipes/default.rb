@@ -1,7 +1,7 @@
 package "minidlna"
 
 service "minidlna" do
-  supports :enalbe => true, :start => true, :stop => true, :restart => true
+  supports :enable => true, :start => true, :stop => true, :restart => true
   action [ :enable, :start ]
 end
 
