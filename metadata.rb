@@ -1,7 +1,7 @@
 maintainer       "James Moriarty"
 maintainer_email "james@locomote.com"
 license          "MIT"
-description      "Installs / configure MiniDLNA"
+description      "Install/Configure MiniDLNA"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "1.0.0"
 
