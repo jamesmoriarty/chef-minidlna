@@ -1,7 +1,7 @@
 package "minidlna"
 
 service "minidlna" do
-  supports :enable => true, :start => true, :stop => true, :restart => true
+  supports :start => true, :stop => true, :restart => true
   action [ :enable, :start ]
 end
 
@@ -10,5 +10,5 @@ template "/etc/minidlna.conf" do
   owner  "minidlna"
   group  "minidlna"
 
-  notifies :"restart", resources(:service => "minidlna")
+  notifies :restart, resources(:service => "minidlna")
 end
